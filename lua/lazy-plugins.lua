@@ -128,11 +128,13 @@ require('lazy').setup({
   },
 
   {
-    -- My Theme
-    'M-T3K/tartessos.nvim',
+    "slugbyte/lackluster.nvim",
+    lazy = false,
     priority = 1000,
-    config = function()
-      vim.cmd.colorscheme 'tartessos'
+    init = function()
+        vim.cmd.colorscheme("lackluster")
+        -- vim.cmd.colorscheme("lackluster-hack") -- my favorite
+        -- vim.cmd.colorscheme("lackluster-mint")
     end,
   },
 
@@ -143,7 +145,7 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = false,
-        theme = 'onedark',
+        theme = 'lackluster',
         component_separators = '|',
         section_separators = '',
       },
