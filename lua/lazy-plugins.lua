@@ -23,7 +23,7 @@ require('lazy').setup({
   -- modular approach: using `require 'path/name'` will
   -- include a plugin definition from file lua/path/name.lua
 
-  require 'kickstart/plugins/gitsigns',
+  require 'kickstart/plugins/git', -- Git related plugins
 
   require 'kickstart/plugins/which-key',
 
@@ -35,13 +35,15 @@ require('lazy').setup({
 
   require 'kickstart/plugins/blink-cmp',
 
-  require 'kickstart/plugins/tokyonight',
+  require 'kickstart/plugins/lackluster',
 
   require 'kickstart/plugins/todo-comments',
 
   require 'kickstart/plugins/mini',
 
   require 'kickstart/plugins/treesitter',
+
+  require 'kickstart/plugins/auto-detect-tab-and-shift-width', -- tpope's vim-sleuth
 
   -- The following comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
